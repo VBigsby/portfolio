@@ -23,14 +23,13 @@ export const iconHeights = {
 }
 
 export type IconProps = {
-    children?: React.ReactNode
     className?: string
     icon: string
     size?: string
     style?: any
 }
 
-export const Icon: React.FC = React.memo(
+export const Icon = React.memo(
     ({ className, icon, size = 'sm', style = {} }: IconProps): JSX.Element => {
         const paths = icons[icon].map(iconPath => <path d={iconPath} key={iconPath} fill="#2D2C2C" />)
         return (
