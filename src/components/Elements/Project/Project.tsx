@@ -8,13 +8,12 @@ export type ProjectProps = {
     backgroundImageSrc: string
     caseLink?: string
     catchDesc: string
-    children?: React.ReactNode
     description: string
     headerImage: any
     role: string
 }
 
-export const Project: React.FC = React.memo(
+export const Project = React.memo(
     ({ headerImage, backgroundImageSrc, role, catchDesc, description, caseLink }: ProjectProps): JSX.Element => {
         const [buttonIsDisabled, setButtonIsDisabled] = React.useState(false)
         const [inHover, setHover] = React.useState(false)
