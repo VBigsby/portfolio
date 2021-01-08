@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Image from 'next/image'
 
 import { Button } from '../Button/Button'
 import styles from './Project.module.css'
@@ -28,20 +27,14 @@ export const Project = React.memo(
         const buttonText = inHover && buttonIsDisabled ? 'Coming Soon' : 'View Case Study'
         const disabledClass = inHover && buttonIsDisabled ? 'buttonDisabled' : ''
         return (
-            <section className={`container ${styles.section}`}>
-                <Image
-                    alt="background"
-                    src={backgroundImageSrc}
-                    className={styles.coverImage}
-                    layout="fill"
-                    objectFit="cover"
-                    quality={100}
-                />
-
+            <section
+                className={`container ${styles.section}`}
+                style={{ backgroundImage: `url(${backgroundImageSrc})` }}
+            >
                 <div className={styles.projectContainer}>
                     <div className={styles.projectContent}>
                         <header>
-                            <Image {...headerImage} />
+                            <img src={headerImage.src} alt={headerImage.alt} />
                         </header>
 
                         <p>{role}</p>
