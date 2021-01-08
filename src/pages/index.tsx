@@ -8,9 +8,7 @@ const projects = [
         description: 'For my first project as a solo designer did the end-to-end user experience process.',
         headerImage: {
             alt: 'springboard_logo',
-            height: 80,
-            src: '/images/logos/logo_springboard.png',
-            width: 336
+            src: '/images/logos/logo_springboard.png'
         },
         role: 'Lead UX/UI Designer'
     },
@@ -23,9 +21,7 @@ const projects = [
         headerImageSrc: '/images/logos/logo_citypup.png',
         headerImage: {
             alt: 'citypups_logo',
-            height: 80,
-            src: '/images/logos/logo_citypup.png',
-            width: 727
+            src: '/images/logos/logo_citypup.png'
         },
         role: 'Lead UI Designer'
     },
@@ -37,9 +33,7 @@ const projects = [
             'Participated in a 2-week Design Challenge. Help managed 3 UX designers, conducted research, interviews, usability tests, created personas, and low-fidelity wireframes.',
         headerImage: {
             alt: 'iterate_ux_logo',
-            height: 97,
-            src: '/images/logos/logo_iterate_ux.png',
-            width: 661
+            src: '/images/logos/logo_iterate_ux.png'
         },
         role: 'Product Manager and UX/UI Designer'
     }

@@ -1,12 +1,11 @@
 .section {
-    padding-top: var(--spacing-lg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
     position: relative;
     text-align: left;
-}
-
-.coverImage {
-    z-index: -1;
+    width: 100%;
 }
 
 .projectContainer {
