@@ -338,10 +338,8 @@ small,
 }
 
 blockquote {
-    margin: 10px;
-    padding: 2em;
-    background: var(--cardBg);
-    box-shadow: var(--level-3);
+    padding: var(--spacing-md) 0;
+    font-size: 30px;
 }
 
 hr {
@@ -442,6 +440,17 @@ button[disabled] {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.aboutHeader {
+    background: url('/images/backgrounds/aboutHeader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.aboutGrid {
 }
 
 @media only screen and (min-width: 500px) {
