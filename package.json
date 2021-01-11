@@ -8,8 +8,8 @@
         "build": "next build && next export -o _static"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "ozborne132@gmail.com",
+    "license": "MIT",
     "dependencies": {
         "next": "^10.0.0",
         "react": "^16.14.0",

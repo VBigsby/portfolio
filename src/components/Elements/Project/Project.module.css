@@ -13,6 +13,10 @@
     grid-template-columns: 60% 40%;
 }
 
+.projectContainer header img {
+    max-width: 100%;
+}
+
 .projectContent {
     display: inline-block;
     z-index: 1;
