@@ -283,9 +283,8 @@ footer p {
 
 p {
     font-family: var(--bodyFont);
-    font-size: var(--paragraphText);
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
     line-height: 1.5;
-    max-width: 40em;
 }
 
 p a,
@@ -313,7 +312,7 @@ h5 {
 
 h1 {
     margin-top: 0;
-    font-size: var(--h1);
+    font-size: calc(var(--h1) + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h2 {
@@ -338,10 +337,8 @@ small,
 }
 
 blockquote {
-    margin: 10px;
-    padding: 2em;
-    background: var(--cardBg);
-    box-shadow: var(--level-3);
+    padding: var(--spacing-md) 0;
+    font-size: 30px;
 }
 
 hr {
@@ -444,10 +441,71 @@ button[disabled] {
     position: absolute;
 }
 
+.aboutHeader {
+    background: url('/images/backgrounds/aboutHeader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 200px 0;
+}
+
+.aboutHeader div h1 {
+    color: #8c1a81;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 70px;
+}
+
+.profileWrapper {
+    width: 100%;
+}
+
+.profileWrapper img {
+    width: 100%;
+}
+
+.linkGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.linkGrid span a {
+    align-items: center;
+    display: flex;
+}
+
+.linkGrid span a svg {
+    margin-right: 20px;
+}
+
+#aboutSection {
+    padding-top: var(--spacing-xlg);
+    padding-bottom: var(--spacing-xlg);
+}
+
+#aboutSection p {
+    font-size: calc(12px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#aboutSection h2 {
+    font-size: calc(28px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .aboutGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     :root {
         --baseFontSize: 112.5%;
     }
+
     .flex {
         display: flex;
     }
