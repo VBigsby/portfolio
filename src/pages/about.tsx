@@ -17,7 +17,11 @@ export default function About() {
 
                         <div className="linkGrid">
                             <span>
-                                <a href="" target="_blank" rel="noopener noreferrer">
+                                <a
+                                    href="https://www.figma.com/proto/7f2XqeoU9l272g8aY5up2K/UX%2FUI-Resume?node-id=1%3A3&scaling=min-zoom"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <svg
                                         width="24"
                                         height="32"
@@ -39,7 +43,11 @@ export default function About() {
                             </span>
 
                             <span>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <a
+                                    href="https://www.figma.com/proto/o6aTAlC8qh00Zr1dhqfJVh/CoverLetter?node-id=1%3A2&scaling=min-zoom"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <svg
                                         width="24"
                                         height="32"
